@@ -16,16 +16,16 @@ const BlogSchema = new Schema(
 		},
 		photo: {
 			type: String,
-			required: true,
+			// required: true,
 		},
 		comments: {
 			text: String,
 			postedBy: { type: ObjectId, ref: "user" },
 		},
-		createdAt: {
-			type: Date,
-			default: new Date().toLocaleString("en-US", { timeZone: "UTC" }),
-		},
+		// createdAt: {
+		// 	type: Date,
+		// 	default: new Date().toLocaleString("en-US", { timeZone: "UTC" }),
+		// },
 	},
 	{ timestamps: true }
 );
